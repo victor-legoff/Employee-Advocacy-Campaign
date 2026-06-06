@@ -1,0 +1,20 @@
+# Secrets — jamais en clair dans le repo
+.env
+*.env
+!*.example.env
+
+# Clés de service Google
+*service-account-key.json
+*credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Données brutes sensibles (exporter manuellement si besoin)
+Data-Lake/**/*.csv
+!Data-Lake/**/schema.csv
